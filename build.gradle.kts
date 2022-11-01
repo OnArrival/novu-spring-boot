@@ -21,6 +21,15 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+	// https://mvnrepository.com/artifact/io.github.openfeign/feign-gson
+	implementation("io.github.openfeign:feign-gson:11.10")
+
+	// https://mvnrepository.com/artifact/io.github.openfeign/feign-okhttp
+	implementation("io.github.openfeign:feign-okhttp:11.10")
+	// https://mvnrepository.com/artifact/io.github.openfeign/feign-slf4j
+	implementation("io.github.openfeign:feign-slf4j:11.9.1")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
