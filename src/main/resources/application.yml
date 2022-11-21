@@ -1,0 +1,8 @@
+novu:
+  url: https://official-joke-api.appspot.com/random_joke
+feign:
+  client:
+    config:
+      novu:
+        connect-timeout: 1000
+        read-timeout: 2000

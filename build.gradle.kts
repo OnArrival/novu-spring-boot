@@ -23,12 +23,13 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
 	// https://mvnrepository.com/artifact/io.github.openfeign/feign-gson
-	implementation("io.github.openfeign:feign-gson:11.10")
+	implementation("io.github.openfeign:feign-gson:12.0")
 
 	// https://mvnrepository.com/artifact/io.github.openfeign/feign-okhttp
-	implementation("io.github.openfeign:feign-okhttp:11.10")
+	implementation("io.github.openfeign:feign-okhttp:12.0")
 	// https://mvnrepository.com/artifact/io.github.openfeign/feign-slf4j
-	implementation("io.github.openfeign:feign-slf4j:11.9.1")
+	implementation("io.github.openfeign:feign-slf4j:12.0")
+	implementation("ga.rugal:feign-client-generator:1.0.0")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
