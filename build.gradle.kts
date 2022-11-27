@@ -19,18 +19,16 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-
-	// https://mvnrepository.com/artifact/io.github.openfeign/feign-gson
-	implementation("io.github.openfeign:feign-gson:11.10")
-
-	// https://mvnrepository.com/artifact/io.github.openfeign/feign-okhttp
-	implementation("io.github.openfeign:feign-okhttp:11.10")
-	// https://mvnrepository.com/artifact/io.github.openfeign/feign-slf4j
-	implementation("io.github.openfeign:feign-slf4j:11.9.1")
-
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation ("org.springframework.cloud:spring-cloud-starter-openfeign")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+dependencyManagement {
+	imports {
+		mavenBom ("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR5")
+	}
 }
 
 tasks.withType<KotlinCompile> {
